@@ -1,10 +1,9 @@
 plugins {
     alias(libs.plugins.cadencego.android.library)
-    alias(libs.plugins.cadencego.koin)
 }
 
 android {
-    namespace = "com.example.cadence_sensor"
+    namespace = "com.example.common"
 
     defaultConfig {
         consumerProguardFiles("consumer-rules.pro")
@@ -24,9 +23,9 @@ android {
 dependencies {
 
     implementation(libs.androidx.core.ktx)
+    implementation(libs.androidx.appcompat)
+    implementation(libs.material)
     testImplementation(libs.junit)
     androidTestImplementation(libs.androidx.junit)
     androidTestImplementation(libs.androidx.espresso.core)
-
-    implementation(project(":domain:cadence_sensor"))
 }

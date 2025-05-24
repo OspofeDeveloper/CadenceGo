@@ -1,8 +1,6 @@
 plugins {
-    alias(libs.plugins.android.library)
-    alias(libs.plugins.kotlin.android)
-    alias(libs.plugins.cadencego.koin)
     alias(libs.plugins.cadencego.android.library)
+    alias(libs.plugins.cadencego.koin)
 }
 
 android {

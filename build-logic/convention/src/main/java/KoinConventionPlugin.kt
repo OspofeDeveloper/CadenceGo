@@ -9,6 +9,7 @@ class KoinConventionPlugin : Plugin<Project> {
         val libs = extensions.findByType(VersionCatalogsExtension::class.java)?.named("libs")
             ?: error("Version catalog 'libs' not found")
 
+        dependencies.add("implementation", project.dependencies.platform(libs.findLibrary("koin-bom").get()))
         dependencies.add("implementation", libs.findLibrary("koin-core").get())
 
         pluginManager.withPlugin("com.android.base") {

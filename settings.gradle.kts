@@ -1,4 +1,5 @@
 pluginManagement {
+    includeBuild("build-logic")
     repositories {
         google {
             content {
@@ -23,4 +24,3 @@ rootProject.name = "CadenceGo"
 include(":app")
 include(":data:cadence_sensor")
 include(":domain:cadence_sensor")
-include(":build-logic:convention")

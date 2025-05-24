@@ -45,6 +45,7 @@ koin-logger-slf4j = { module = "io.insert-koin:koin-logger-slf4j" }
 
 # Dependencies of the included build-logic
 kotlin-gradlePlugin = { group = "org.jetbrains.kotlin", name = "kotlin-gradle-plugin", version.ref = "kotlin" }
+android-gradlePlugin = { group = "com.android.tools.build", name = "gradle", version.ref = "agp" }
 
 [plugins]
 android-application = { id = "com.android.application", version.ref = "agp" }
@@ -54,4 +55,5 @@ android-library = { id = "com.android.library", version.ref = "agp" }
 jetbrains-kotlin-jvm = { id = "org.jetbrains.kotlin.jvm", version.ref = "jetbrainsKotlinJvm" }
 
 #Plugins defined by this project
-cadencego-koin = { id = "cadencego.koin", version = "1.0.0" }
+cadencego-koin = { id = "cadencego.koin" }
+cadencego-android-library = { id = "cadencego.android.library" }

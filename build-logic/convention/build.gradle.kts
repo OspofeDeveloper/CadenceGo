@@ -17,6 +17,7 @@ kotlin {
 
 dependencies {
     compileOnly(libs.kotlin.gradlePlugin)
+    compileOnly(libs.android.gradlePlugin)
 }
 
 gradlePlugin {
@@ -24,6 +25,10 @@ gradlePlugin {
         register("koin") {
             id = libs.plugins.cadencego.koin.get().pluginId
             implementationClass = "KoinConventionPlugin"
+        }
+        register("androidLibrary") {
+            id = libs.plugins.cadencego.android.library.get().pluginId
+            implementationClass = "AndroidLibraryConventionPlugin"
         }
     }
 }

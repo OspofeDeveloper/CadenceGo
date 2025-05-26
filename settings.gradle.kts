@@ -24,4 +24,5 @@ rootProject.name = "CadenceGo"
 include(":app")
 include(":data:cadence_sensor")
 include(":domain:cadence_sensor")
+include(":core:system")
 include(":core:common")

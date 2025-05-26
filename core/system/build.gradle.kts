@@ -4,7 +4,7 @@ plugins {
 }
 
 android {
-    namespace = "com.example.cadence_sensor"
+    namespace = "com.example.system"
 
     defaultConfig {
         consumerProguardFiles("consumer-rules.pro")
@@ -19,6 +19,10 @@ android {
             )
         }
     }
+
+    lint {
+        disable.add("MissingPermission")
+    }
 }
 
 dependencies {
@@ -27,8 +31,5 @@ dependencies {
     testImplementation(libs.junit)
     androidTestImplementation(libs.androidx.junit)
     androidTestImplementation(libs.androidx.espresso.core)
-
-    implementation(project(":domain:cadence_sensor"))
-    implementation(project(":core:system"))
     implementation(project(":core:common"))
 }

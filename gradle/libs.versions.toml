@@ -33,6 +33,8 @@ androidx-appcompat = { group = "androidx.appcompat", name = "appcompat", version
 kotlinx-coroutines-android = { module = "org.jetbrains.kotlinx:kotlinx-coroutines-android", version.ref = "kotlinxCoroutinesAndroid" }
 material = { group = "com.google.android.material", name = "material", version.ref = "material" }
 
+kotlin-test = { group = "org.jetbrains.kotlin", name = "kotlin-test", version.ref = "kotlin" }
+
 #koin
 koin-bom = { module = "io.insert-koin:koin-bom", version.ref = "koin-bom" }
 koin-core = { module = "io.insert-koin:koin-core" }
@@ -57,3 +59,4 @@ jetbrains-kotlin-jvm = { id = "org.jetbrains.kotlin.jvm", version.ref = "jetbrai
 #Plugins defined by this project
 cadencego-koin = { id = "cadencego.koin" }
 cadencego-android-library = { id = "cadencego.android.library" }
+cadencego-jvm-library = { id = "cadencego.jvm.library" }

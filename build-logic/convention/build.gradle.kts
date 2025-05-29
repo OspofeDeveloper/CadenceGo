@@ -30,6 +30,10 @@ gradlePlugin {
             id = libs.plugins.cadencego.android.library.get().pluginId
             implementationClass = "AndroidLibraryConventionPlugin"
         }
+        register("jvmLibrary") {
+            id = libs.plugins.cadencego.jvm.library.get().pluginId
+            implementationClass = "JVMLibraryConventionPlugin"
+        }
     }
 }
 
